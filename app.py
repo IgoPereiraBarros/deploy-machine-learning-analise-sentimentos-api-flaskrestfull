@@ -45,7 +45,7 @@ class PredictSentiment(Resource):
             pred_text = 'Negative'
 
          # round the predict proba value and set to new variable
-         confidence = round(pred_proba[0], 2)
+         confidence = round(pred_proba[0], 2) * 100
 
          # create JSON object
          output = {
